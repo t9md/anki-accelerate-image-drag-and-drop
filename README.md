@@ -53,9 +53,9 @@ Then I noticed
 
 **Please ignore this if you find it TOO complex!**
 
-I use <a href="https://folivora.ai/>BetterTouchTool</a> which allow me to set a global shortcut to send shortcut key to a specific App.
-So I can invoke `Preview Next And Click Primal Image Link` from **outside** of `Anki`, thus I even don't have to activate anki app to open next card and image search result.
-I set following global keyboard shortcut to send each key to Anki.app.
+I use <a href="https://folivora.ai/>BetterTouchTool</a> which allow me to set a global shortcut to send shortcut key to a specific App.  
+So I can invoke `Preview Next And Click Primal Image Link` from **outside** of `Anki`, thus I even don't have to activate anki app to open next card and image search result.  
+I set following global keyboard shortcut to send each key to Anki.app.  
 
 - Key `Shift-Cmd-N` send `Shift-Cmd-N` to Anki.app
 - Key `Shift-Cmd-P` send `Shift-Cmd-P` to Anki.app
