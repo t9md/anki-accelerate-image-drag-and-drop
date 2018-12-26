@@ -22,7 +22,7 @@ This add-on provides following features which hopefully make drag&drop of an ima
 1. Open Anki browser
 2. Choose deck which has notes which you want to add images to them.
 3. Necessary only once: Create field and make it come very 1st field.
-4. From menu bar execute `Widen 1st field` or hit `Shift-Cmd-E`, then you see 1st field become widen.
+4. From menu bar execute `Widen First field` or hit `Shift-Cmd-E`, then you see 1st field become widen.
 5. Open preview window
 
 ### Repeated steps until you exhausted by adding images to all cards.
@@ -34,7 +34,7 @@ This add-on provides following features which hopefully make drag&drop of an ima
 
 - You need to reorder field for image dropping to come very first field in a card.
 - Preview Next/Previous shortcut do nothing unless preview window is already opened.
-- If you want to use `Preview Next and auto-open hyperlink` feature, you need to set a card to have a hyperlink with id `primal-image-link`. ex) `<a id="primal-image-link" href="https://www.google.co.jp/search?q={{word}}&tbm=isch">Img</a>`.
+- If you want `Preview Next And Click Primal Image Link` work, you need to set a card to have a hyperlink with id `primal-image-link`. ex) `<a id="primal-image-link" href="https://www.google.co.jp/search?q={{word}}&tbm=isch">Img</a>`.
 
 ## Background why I created this add-on
 
@@ -54,7 +54,8 @@ Then I noticed
 **Please ignore this if you find it TOO complex!**
 
 I use <a href="https://folivora.ai/>BetterTouchTool</a> which allow me to set a global shortcut to send shortcut key to a specific App.
-So I set following global keyboard shortcut to send each key to Anki.app.
+So I can invoke `Preview Next And Click Primal Image Link` from **outside** of `Anki`, thus I even don't have to activate anki app to open next card and image search result.
+I set following global keyboard shortcut to send each key to Anki.app.
 
 - Key `Shift-Cmd-N` send `Shift-Cmd-N` to Anki.app
 - Key `Shift-Cmd-P` send `Shift-Cmd-P` to Anki.app
