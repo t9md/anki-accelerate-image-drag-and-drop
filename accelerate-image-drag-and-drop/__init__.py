@@ -58,7 +58,7 @@ def onSetupMenus(browser):
     def clickLink(editor):
         global previewQueue
         if previewQueue:
-            codeTemplate = "setTimeout(function() { document.getElementById('%s').click() }, %s)"
+            codeTemplate = "setTimeout(function() { document.getElementById('%s').click() }, %d)"
             code = codeTemplate % (getConfig('autoClickHyperlinkId'), getConfig('autoClickHyperlinkDelayInMilliSeconds'))
             browser._previewWeb.eval(code)
             del previewQueue[:]

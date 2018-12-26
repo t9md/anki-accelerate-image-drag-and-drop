@@ -1,5 +1,5 @@
 {
-  "firstFieldMinHeight": "600px",
-  "autoClickHyperlinkId'": "primal-image-link",
+  "firstFieldMinHeight": "800px",
+  "autoClickHyperlinkId": "primal-image-link",
   "autoClickHyperlinkDelayInMilliSeconds": 500
 }
