@@ -1,11 +1,13 @@
-# anki-accelerate-image-drag-and-drop
+# Accelerate Image Drag And Drop
 
+<a href="https://github.com/t9md/anki-accelerate-image-drag-and-drop">GitHub project page</a>
+<a href="https://ankiweb.net/shared/info/283563795">Add-on page</a>
 
-![who-was](imgs/accelerate-image-drag-and-drop.gif)
+<img src="https://raw.githubusercontent.com/t9md/anki-accelerate-image-drag-and-drop/master/imgs/accelerate-image-drag-and-drop.gif" alt="accelerate-image-drag-and-drop">
 
 ## What's this?
 
-This [Anki](https://apps.ankiweb.net/) add-on is not for daily use, instead, it helps a very specific situation where you add images to a bunch of notes intensively for a specific period.
+This <a href="https://apps.ankiweb.net/">Anki</a> add-on is not for daily use, instead, it helps a very specific situation where you add images to a bunch of notes intensively for a specific period.
 This add-on provides following features which hopefully make drag&drop of an image from browser far easier.
 
 - Maximize **first field** of the editor of Note in Browser by shortcut (`Shift-Ctrl-E`) or (`Shift-Cmd-E`).
@@ -53,7 +55,7 @@ Then I noticed
 
 **Please ignore this if you find it TOO complex!**
 
-I use [BetterTouchTool](https://folivora.ai/) which allow me to set a global shortcut to send shortcut key to a specific App.
+I use <a href="https://folivora.ai/>BetterTouchTool</a> which allow me to set a global shortcut to send shortcut key to a specific App.
 So I set following global keyboard shortcut to send each key to Anki.app.
 
 - Key `Shift-Cmd-N` send `Shift-Cmd-N` to Anki.app
