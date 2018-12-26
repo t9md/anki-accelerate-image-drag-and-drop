@@ -1,7 +1,7 @@
 # Accelerate Image Drag And Drop
 
-<a href="https://github.com/t9md/anki-accelerate-image-drag-and-drop">GitHub project page</a>
-<a href="https://ankiweb.net/shared/info/283563795">Add-on page</a>
+- <a href="https://github.com/t9md/anki-accelerate-image-drag-and-drop">GitHub project page</a>
+- <a href="https://ankiweb.net/shared/info/283563795">Add-on page</a>
 
 <img src="https://raw.githubusercontent.com/t9md/anki-accelerate-image-drag-and-drop/master/imgs/accelerate-image-drag-and-drop.gif" alt="accelerate-image-drag-and-drop">
 
