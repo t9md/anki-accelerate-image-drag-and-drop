@@ -5,11 +5,11 @@ import aqt
 
 FIELD_WIDENED = False
 
-JavaScriptCode = """
+JavaScriptCodeTemplate = """
 function tamperEditorStyle(enabled) {
   var f0Style = document.getElementById('f0')
   if (enabled) {
-    f0Style.style.height = '800px'
+    f0Style.style.minHeight = '%s'
     f0Style.style.backgroundColor = 'coral'
   } else {
     f0Style.removeAttribute("style")
@@ -18,9 +18,13 @@ function tamperEditorStyle(enabled) {
 tamperEditorStyle(%s)
 """
 
+def getConfig(param):
+    return aqt.mw.addonManager.getConfig(__name__)[param]
+
 def widenFirstField(editor):
     global FIELD_WIDENED
-    code = JavaScriptCode % ("true" if FIELD_WIDENED else "false")
+    trueOrFalse = "true" if FIELD_WIDENED else "false"
+    code = JavaScriptCodeTemplate % (getConfig('firstFieldMinHeight'), trueOrFalse)
     editor.web.eval(code)
 
 def toggleWidenFirstField(browser):
@@ -53,9 +57,9 @@ def onSetupMenus(browser):
 
     def clickLink(editor):
         global previewQueue
-        clickDelayInMS = 500
         if previewQueue:
-            code = "setTimeout(function() { document.getElementById('primal-image-link').click() }, %s)" % clickDelayInMS
+            codeTemplate = "setTimeout(function() { document.getElementById('%s').click() }, %s)"
+            code = codeTemplate % (getConfig('autoClickHyperlinkId'), getConfig('autoClickHyperlinkDelayInMilliSeconds'))
             browser._previewWeb.eval(code)
             del previewQueue[:]
 
@@ -84,6 +88,5 @@ def onSetupMenus(browser):
 def main():
     anki.hooks.addHook('browser.setupMenus', onSetupMenus)
     anki.hooks.addHook('loadNote', widenFirstField)
-
 
 main()
