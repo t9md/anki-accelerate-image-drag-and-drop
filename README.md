@@ -15,9 +15,9 @@ This add-on provides following features which hopefully make drag&drop of an ima
 - Preview Next via shortcut regardless of the focus of fields or window (`Shift-Ctrl-N`) or (`Shift-Cmd-N`).
 - Preview Next and auto-open hyperlink for `id="primal-image-link"`. (`Shift-Ctrl-O`) or (`Shift-Cmd-O`).
 
-## Use case
+## How to use
 
-#### Preparation
+### Preparation
 
 1. Open Anki browser
 2. Choose deck which has notes which you want to add images to them.
@@ -25,20 +25,18 @@ This add-on provides following features which hopefully make drag&drop of an ima
 4. From menu bar execute `Widen 1st field` or hit `Shift-Cmd-E`, then you see 1st field become widen.
 5. Open preview window
 
-#### Repeated steps until you exhausted by adding images to all cards.
+### Repeated steps until you exhausted by adding images to all cards.
 
 1. Drag&drop image from a web browser to wide-orange-1st-field. Then check the preview window.
 2. Hit `Shift-Cmd-O`, it renders a preview of next card then automatically open image search result. So, continue drag&drop!
 
-# Use case
-
-### Things you need to know
+### Notes
 
 - You need to reorder field for image dropping to come very first field in a card.
 - Preview Next/Previous shortcut do nothing unless preview window is already opened.
 - If you want to use `Preview Next and auto-open hyperlink` feature, you need to set a card to have a hyperlink with id `primal-image-link`. ex) `<a id="primal-image-link" href="https://www.google.co.jp/search?q={{word}}&tbm=isch">Img</a>`.
 
-### Motivation and Scenario I'm intending.
+## Background why I created this add-on
 
 This add-on is basically for my own benefits, so I will explain some background.
 Remembering completely vocabulary is always difficult.
