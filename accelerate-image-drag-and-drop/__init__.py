@@ -28,6 +28,8 @@ def toggleWidenFirstField(browser):
     FIELD_WIDENED = not FIELD_WIDENED
     widenFirstField(browser.editor)
 
+previewQueue = []
+
 def onSetupMenus(browser):
     global FIELD_WIDENED
     from PyQt5 import QtWidgets
@@ -49,14 +51,18 @@ def onSetupMenus(browser):
         if browser._previewWindow:
             browser._onPreviewPrev()
 
+    def clickLink(editor):
+        global previewQueue
+        if previewQueue:
+            browser._previewWeb.eval("document.getElementById('primal-image-link').click()")
+            del previewQueue[:]
+
+    anki.hooks.addHook('loadNote', clickLink)
+
     def previewNextAndClickPrimalImageLink():
         if browser._previewWindow:
             browser._onPreviewNext()
-            anki.hooks.addHook('loadNote', clickLink)
-
-    def clickLink(editor):
-        browser._previewWeb.eval("document.getElementById('primal-image-link').click()")
-        anki.hooks.remHook('loadNote', clickLink)
+            previewQueue.append(1)
 
     actionPreviewNext = QAction("Preview Next", menu)
     actionPreviewNext.triggered.connect(previewNextIfExists)
