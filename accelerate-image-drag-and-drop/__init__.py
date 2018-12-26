@@ -53,8 +53,10 @@ def onSetupMenus(browser):
 
     def clickLink(editor):
         global previewQueue
+        clickDelayInMS = 500
         if previewQueue:
-            browser._previewWeb.eval("document.getElementById('primal-image-link').click()")
+            code = "setTimeout(function() { document.getElementById('primal-image-link').click() }, %s)" % clickDelayInMS
+            browser._previewWeb.eval(code)
             del previewQueue[:]
 
     anki.hooks.addHook('loadNote', clickLink)
